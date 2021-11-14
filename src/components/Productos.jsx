@@ -30,7 +30,7 @@ const Productos = () => {
             <img src="https://i.ibb.co/GvCvb8V/9.jpg" alt="9" border="0"/>
             </div>
             <div className="prod__grid">
-
+           <img src="https://i.ibb.co/3yP0NhW/20211114-115602-min.jpg" alt="20211114-115602-min" border="0"/>
             </div>
             
         </div>
