@@ -14,7 +14,7 @@ const Navbar = () => {
                 <ul className="nav__menu">
                     <li><a href="#">Ropa interior</a></li>
                     <li><a href="#">accesorios</a></li>
-                    <li><a href="#">pijamas</a></li>
+                    <li><a href="#">mallas</a></li>
                 </ul>
            </div>
            <div className="nav__right">

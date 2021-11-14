@@ -1,0 +1,20 @@
+.prod__main{
+    
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px;
+}
+.prod__grid{
+    
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prod__grid img{
+    height: 100%;
+   
+}
