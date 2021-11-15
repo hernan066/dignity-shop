@@ -1,0 +1,25 @@
+.detalle__main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding: 30px 80px;
+    
+}
+.detalle__img{
+    border: 1px solid #ccc;
+    width: 50%;
+   
+}
+.detalle__info{
+    border: 1px solid #ccc;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-between;
+   
+}
+.detalle__img img{
+    height: 100%;
+    width: 100%;
+}

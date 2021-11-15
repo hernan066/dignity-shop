@@ -1,10 +1,11 @@
-import Home from "./pages/Home";
+import React from 'react';
+import AppRouter from "./router/AppRouter";
 
 
 
 function App() {
   return (
-    <Home/>
+   <AppRouter />
     
   );
 }
