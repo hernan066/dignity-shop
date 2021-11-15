@@ -7,7 +7,9 @@ export const datos =[
         subCategoria: 'Pantalones',
         talle: 'M',
         precio: '$300',
-        imagen: 'https://i.ibb.co/Y8j3bxT/1.jpg'
+       imagen: 'https://i.ibb.co/Y8j3bxT/1.jpg'
+        //imagen: 'https://i.ibb.co/CVyBYJj/1-1.jpg'
+        
 
 
     },
