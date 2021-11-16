@@ -65,6 +65,15 @@
    height: 430px;
     overflow: hidden;
 }
+.carrusel__elemento h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.carrusel__elemento p{
+    font-size: 18px;
+}
 .carrusel__elemento img{
     width: 100%;
 }

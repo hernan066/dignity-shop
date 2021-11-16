@@ -4,6 +4,7 @@ import Productos from '../components/Productos'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import Carrusel from '../components/Carrusel'
+import ProductosSlider from '../components/ProductosSlider'
 
 
 function Home() {
@@ -11,7 +12,8 @@ function Home() {
         <div>
            
            <Slider />
-           <Productos />
+           <ProductosSlider />
+           {/* <Productos /> */}
            <Carrusel />
            <Newsletter />
            <Footer />

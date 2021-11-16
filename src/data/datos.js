@@ -7,7 +7,7 @@ export const datos =[
         subCategoria: 'Pantalones',
         talle: 'M',
         precio: '$300',
-       imagen: 'https://i.ibb.co/Y8j3bxT/1.jpg'
+       imagen: 'https://i.ibb.co/722pd72/1.jpg'
         //imagen: 'https://i.ibb.co/CVyBYJj/1-1.jpg'
         
 
@@ -21,7 +21,7 @@ export const datos =[
         subCategoria: 'Pantalones',
         talle: 'M',
         precio: '$300',
-        imagen: 'https://i.ibb.co/Ykcrykk/3.jpg'
+        imagen: 'https://i.ibb.co/ggzmSQx/2.jpg'
 
 
     },
@@ -33,7 +33,7 @@ export const datos =[
         subCategoria: 'Mallas',
         talle: 'S',
         precio: '$300',
-        imagen: 'https://i.ibb.co/gwpzsyF/4.jpg'
+        imagen: 'https://i.ibb.co/Ykx8zHL/3.jpg'
 
 
     },
@@ -46,7 +46,7 @@ export const datos =[
         subCategoria: 'Mallas',
         talle: 'S',
         precio: '$300',
-        imagen: 'https://i.ibb.co/fvHv98R/5.jpg'
+        imagen: 'https://i.ibb.co/dMfLsJj/4.jpg'
 
 
     },
@@ -58,7 +58,7 @@ export const datos =[
         subCategoria: 'Mallas',
         talle: 'S',
         precio: '$300',
-        imagen: 'https://i.ibb.co/gyQ0Xzz/6.jpg'
+        imagen: 'https://i.ibb.co/TTDSFgL/5.jpg'
 
 
     },
@@ -70,7 +70,7 @@ export const datos =[
         subCategoria: 'Mallas',
         talle: 'S',
         precio: '$300',
-        imagen: 'https://i.ibb.co/hVbHGMQ/7.jpg'
+        imagen: 'https://i.ibb.co/m5QgtTC/6.jpg'
 
 
     },
@@ -82,7 +82,7 @@ export const datos =[
         subCategoria: 'Bombachas',
         talle: 'S',
         precio: '$300',
-        imagen: 'https://i.ibb.co/0tH3WY2/8.jpg'
+        imagen: 'https://i.ibb.co/ftKBWGs/7.jpg'
 
 
     },
@@ -94,7 +94,7 @@ export const datos =[
         subCategoria: 'Medias',
         talle: 'S',
         precio: '$300',
-        imagen: 'https://i.ibb.co/GvCvb8V/9.jpg'
+        imagen: 'https://i.ibb.co/1qnbr31/8.jpg'
 
 
     },
