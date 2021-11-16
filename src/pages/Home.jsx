@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from '../components/Slider'
 import Productos from '../components/Productos'
+import Newsletter from '../components/Newsletter'
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
            
            <Slider />
            <Productos />
+           <Newsletter />
         </div>
     )
 }
