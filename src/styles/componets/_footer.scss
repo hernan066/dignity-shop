@@ -1,0 +1,33 @@
+.footer__main {
+   width: 100%;
+   
+   text-align: center;
+    
+}
+.footer__main p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 150px;
+    margin-left: 150px; */
+    margin-bottom: 20px;
+
+
+}
+.footer__col{
+    text-align: center;
+    
+    flex: 1;
+}
+.footer__redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__redes i{
+    color: $rosa2;
+    margin-right: 5px;
+}
