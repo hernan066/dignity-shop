@@ -19,7 +19,8 @@
 }
 .footer__col{
     text-align: center;
-    
+   display: flex;
+   flex-direction: column;
     flex: 1;
 }
 .footer__redes{
@@ -30,4 +31,22 @@
 .footer__redes i{
     color: $rosa2;
     margin-right: 5px;
+    margin-bottom: 5px;
 }
+.footer__col h3{
+    margin-bottom: 10px;
+}
+
+.footer__col a{
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: #333;
+    transition: all 0.2s ease-in;
+    &:hover{
+        color: $rosa2;
+    }
+}
+.footer__col br{
+    margin-bottom: 5px;
+}
+

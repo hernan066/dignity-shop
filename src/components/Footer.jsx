@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -6,26 +7,32 @@ const Footer = () => {
             <div className="footer__nav">
                 <div className="footer__col">
                     <h3>Informacion</h3>
-                    <p>Como comprar</p>
-                    <p>Envios</p>
+                   
+                    <Link to="/">Como comprar</Link>
+                    <Link to="/">Envios</Link>
                 </div>
                 <div className="footer__col">
                     <h3>Mi cuenta</h3>
-                    <p>Registrarse</p>
-                    <p>Ingresar</p>
+                   
+                    <Link to="/">Registrarse</Link>
+                    <Link to="/">Ingresar</Link>
                 </div>
                 <div className="footer__col">
                         <h3>Institucional</h3>
-                        <p>Términos y condiciones</p>
-                        <p>Politicas de privacidad</p>
+                        
+                        <Link to="/">Términos y condiciones</Link>
+                        <Link to="/">Politicas de privacidad</Link>
+                        
+                        
+                        
                 </div>
                 <div className="footer__col">
                         <h3>Seguinos</h3>
                         <div className="footer__redes">
-                        <i className="fab fa-instagram"></i> <p>Instagram</p>
+                        <i className="fab fa-instagram"></i> <a href="https://www.instagram.com/">Instagram</a>
                         </div>
                         <div className="footer__redes">
-                        <i className="fab fa-facebook-square"></i><p>Facebook</p>
+                        <i className="fab fa-facebook-square"></i><a href="https://www.facebook.com/">Facebook</a>
                         </div>
                       
                         
