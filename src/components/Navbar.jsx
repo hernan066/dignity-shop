@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -8,18 +9,21 @@ const Navbar = () => {
    <nav className="nav__main">
        <div className="nav__wrapper">
            <div className="nav__left">
-                <h1>-Dignity-</h1>
+                <h1><Link to="/">-Dignity-</Link></h1>
            </div>
            <div className="nav__center">
                 <ul className="nav__menu">
-                    <li><a href="#">Ropa interior</a></li>
-                    <li><a href="#">accesorios</a></li>
-                    <li><a href="#">mallas</a></li>
+                    <li><Link to="/">Ropa Niño</Link></li>
+                    <li><Link to="/">Ropa interior</Link></li>
+                    <li><Link to="/">Accesorios</Link></li>
+                    
+                    
                 </ul>
            </div>
            <div className="nav__right">
-           <span><i className="far fa-user-circle"></i></span>
-           <span><i className="fas fa-shopping-cart"></i></span>
+           <Link to="/login"><span><i className="far fa-user-circle"></i></span></Link>
+           <Link to="/"><span><i className="fas fa-shopping-cart"></i></span></Link>
+           
            </div>
            
 
@@ -30,34 +34,7 @@ const Navbar = () => {
    
    
    
-    /*  <Container>
-      <Wrapper>
-        <Left>
-          <Logo>-Dignity-</Logo>
-        </Left>
-        <Center>
-          <Menu>
-           
-           <li>
-              <Enlaces href="#">Home</Enlaces>
-            </li>
-            <li>
-              <Enlaces href="#">Home</Enlaces>
-            </li>
-            <li>
-              <Enlaces href="#">Home</Enlaces>
-            </li>
-            <li>
-              <Enlaces href="#">Home</Enlaces>
-            </li>
-           
-          </Menu>
-        </Center>
-        <Right>
-          <h1>Right</h1>
-        </Right>
-      </Wrapper>
-    </Container> */
+    
   );
 };
 

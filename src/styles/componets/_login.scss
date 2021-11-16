@@ -1,0 +1,71 @@
+.login__main{
+    height: 100vh;
+
+}
+.login__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.login__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    
+    padding: 20px;
+    background-color: $rosa1;
+    
+    
+}
+.login__form h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+.login__form form input{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #ccc;
+   
+}
+.login__form form button{
+    width: 100%;
+    padding: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #ddd;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: darken($color: $rosa2, $amount: 10);
+    }
+
+}
+.login__register{
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+.login__register p{
+    color: rgb(136, 124, 124);
+    font-weight: 500;
+    font-style: italic;
+}
+.login__register a{
+    text-decoration: none;
+    color: $rosa3;
+    margin-left: 5px;
+    
+    &:hover{
+        color: darken($color: $rosa3, $amount: 10);
+    }
+}

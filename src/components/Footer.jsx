@@ -14,8 +14,8 @@ const Footer = () => {
                 <div className="footer__col">
                     <h3>Mi cuenta</h3>
                    
-                    <Link to="/">Registrarse</Link>
-                    <Link to="/">Ingresar</Link>
+                    <Link to="/register">Registrarse</Link>
+                    <Link to="/login">Ingresar</Link>
                 </div>
                 <div className="footer__col">
                         <h3>Institucional</h3>
