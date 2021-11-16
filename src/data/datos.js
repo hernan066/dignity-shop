@@ -114,4 +114,33 @@ export const datos =[
 
 
 
+];
+export const carruselImg = [
+    {
+        id:'img1',
+        img: 'https://scontent.cdninstagram.com/v/t51.2885-15/248515856_251029693583752_3421121462154040667_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=yj_YcyLE7VEAX9HV0DF&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=c12c6d5a4444a8a29166ed13e97b5de7&oe=6197F958',
+        alt:'ropa'
+
+    },
+    {
+        id:'img2',
+        img: 'https://scontent.cdninstagram.com/v/t51.2885-15/257460561_1251186195383019_8108390638228823222_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=BNbk68dqWAsAX8PfIT5&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=5fb5c36c5919b8bb2f17e6d8b8a2710b&oe=6198CF00',
+        alt:'ropa'    
+    },
+    {
+        id:'img3',
+        img: 'https://scontent.cdninstagram.com/v/t51.2885-15/257379192_1327307454372870_7643516172295814388_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=Vog4_T1jqkgAX-tR8qK&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=21d61c331e702e20977543325f0faa51&oe=61987488',
+        alt:'ropa'
+    },
+    {
+        id:'img4',
+        img: 'https://scontent.cdninstagram.com/v/t51.2885-15/257704183_1065415260879289_8722629694746515851_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=ljlwIYT54r0AX-bmWy7&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=bcc459e8677c0348c9a29bb566db179d&oe=619955B1',
+        alt:'ropa'
+    },
+    {
+        id:'img5',
+        img: 'https://scontent.cdninstagram.com/v/t51.2885-15/256402234_893388061312172_4558392923230731126_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=C8uMf5-F72cAX9prDyE&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=9d6543e002a36ce0f5416a4a054ac574&oe=619989A5',
+        alt:'ropa'
+    },
+    
 ]
