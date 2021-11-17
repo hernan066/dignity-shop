@@ -28,11 +28,11 @@ const ProductosSlider = () => {
           scrollToSlide={3}
           className="gradient-outline"
           onSlideVisible={(context, event) => {
-            console.log("onSlideVisible", context, event);
+            //console.log("onSlideVisible", context, event);
           }}
         >
           {datos.map((data) => (
-            <Contenido>
+            <Contenido key={data.id}>
               <div className="carrusel__elemento">
                 <Link to="/detalle"><img src={data.imagen} alt={data.descripcion} /></Link>
                 <h3>{data.nombre}</h3>

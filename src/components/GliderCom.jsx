@@ -1,7 +1,7 @@
 import "glider-js/glider.min.css";
 import React from "react";
 import Glider from "react-glider";
-import { Link } from "react-router-dom";
+
 import { carruselImg } from "../data/datos";
 
 const PaneExample = ({ children, style, className }) => (
@@ -27,11 +27,11 @@ const GliderCom = () => {
           scrollToSlide={3}
           className="gradient-outline"
           onSlideVisible={(context, event) => {
-            console.log("onSlideVisible", context, event);
+            //console.log("onSlideVisible", context, event);
           }}
         >
           {carruselImg.map((data) => (
-            <PaneExample>
+            <PaneExample key={data.img}>
               <div className="carrusel__elemento">
               <img src={data.img} alt={data.alt} />
               </div>
