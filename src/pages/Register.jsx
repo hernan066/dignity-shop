@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 export const Register = () => {
   return (
     <div className="login__main">
+      <nav className="navbarSimple__main">
+            <h1><Link to='/'>-Dignity-</Link></h1>
+        </nav>
+      
       <div className="login__container">
         <div className="login__form">
           <h2>Registrate</h2>

@@ -1,6 +1,7 @@
 import "glider-js/glider.min.css";
 import React from "react";
 import Glider from "react-glider";
+import { Link } from "react-router-dom";
 import { carruselImg } from "../data/datos";
 
 const PaneExample = ({ children, style, className }) => (
@@ -18,7 +19,7 @@ const GliderCom = () => {
         <Glider
           ref={gliderRef}
           scrollLock
-          draggable
+           draggable 
           hasArrows
           hasDots
           slidesToShow={3}
@@ -32,7 +33,7 @@ const GliderCom = () => {
           {carruselImg.map((data) => (
             <PaneExample>
               <div className="carrusel__elemento">
-                <img src={data.img} alt={data.alt} />
+              <img src={data.img} alt={data.alt} />
               </div>
             </PaneExample>
           ))}

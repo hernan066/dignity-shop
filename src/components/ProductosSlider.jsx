@@ -20,7 +20,7 @@ const ProductosSlider = () => {
         <Glider
           ref={gliderRef}
           scrollLock
-          draggable
+          //draggable
           hasArrows
           //hasDots
           slidesToShow={6}
@@ -34,7 +34,7 @@ const ProductosSlider = () => {
           {datos.map((data) => (
             <Contenido>
               <div className="carrusel__elemento">
-                <img src={data.imagen} alt={data.descripcion} />
+                <Link to="/detalle"><img src={data.imagen} alt={data.descripcion} /></Link>
                 <h3>{data.nombre}</h3>
                 <p>{data.precio}</p>
               </div>

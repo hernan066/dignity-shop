@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const Detalle = () => {
     return (
+        <>
+        <Navbar />
         <div className="detalle__main">
+            
             <div className="detalle__img">
             <img src="https://i.ibb.co/0jsbxCY/1-2.jpg" alt="3" border="0"/>
             </div>
@@ -39,6 +43,7 @@ const Detalle = () => {
 
             
         </div>
+        </>
     )
 }
 

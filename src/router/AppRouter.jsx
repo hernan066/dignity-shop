@@ -10,14 +10,14 @@ import { Register } from '../pages/Register';
 const AppRouter = () => {
     return (
         <>
-         <Navbar />
+         
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/detalle" element={<Detalle />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         </Routes>
-        <Footer />
+       
         </>
         
        
