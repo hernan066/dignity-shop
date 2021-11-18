@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="nav__center">
           <ul className="nav__menu">
             <li>
-              <Link to="/">Ropa Niño</Link>
+              <Link to="/" >Ropa Niño</Link>
             </li>
             <li>
               <Link to="/">Ropa interior</Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
       
       {
-        menuOn ? <MovilNavbar /> : null
+        menuOn ? <MovilNavbar menuOn= {menuOn} /> : null
       }
      
       
