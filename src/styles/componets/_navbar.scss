@@ -78,10 +78,12 @@
 }
 
 @media (max-width: 790px) {
-  .nav__menu-icon {
+  .nav__menu-icon, 
+  .fa-shopping-cart {
     display: block;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     cursor: pointer;
+    list-style: none;
   }
   .nav__menu-icon .fa-times {
     position: fixed;
