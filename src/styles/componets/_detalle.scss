@@ -1,18 +1,20 @@
 .detalle__main{
     display: flex;
+    flex-wrap: wrap;
     height: 100vh;
-    width: 100vw;
-    padding: 30px 80px;
+    
+    padding: 80px 5%;
     
 }
 .detalle__img{
     
-    width: 50%;
+    width: 500px;
+    min-width: 350px;
    
 }
 .detalle__info{
     
-    width: 50%;
+    width: 500px;
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -25,16 +27,11 @@
     margin-bottom: 15px;
 }
 
-.detalle__info h2,
-.detalle__info h3
-{
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
+
 
 .detalle__talle{
     display: flex;
-    margin-top: 20px;
+    
     
 }
 
@@ -48,7 +45,7 @@
 }
 
 .detalle__info button{
-    margin-top: 100px;
+    margin-top: 15px;
     height: 40px;
     background-color: $rosa2;
     border: none;
@@ -64,7 +61,7 @@
 
 
 .detalle__img img{
-    height: 100%;
+   
     width: 100%;
 }
 .detalle__review{
@@ -75,4 +72,13 @@
 }
 .detalle__review p{
     margin-left: 10px;
+}
+.detalle__infos{
+    padding: 10px 0px;
+}
+.detalle__infos h3{
+    //text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 8px;
 }
