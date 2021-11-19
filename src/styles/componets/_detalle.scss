@@ -2,13 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-    
+    justify-content: center;
     padding: 80px 5%;
     
 }
 .detalle__img{
     
-    width: 500px;
+    width: 600px;
     min-width: 350px;
    
 }
@@ -85,7 +85,7 @@
 
 @media (max-width: 550px){
     .detalle__info{
-        padding: 50px 3%;
+        padding: 50px 5%;
     }
 } 
 
