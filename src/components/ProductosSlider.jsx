@@ -23,10 +23,10 @@ const ProductosSlider = () => {
           //draggable
           hasArrows
           //hasDots
-          slidesToShow={6}
+          slidesToShow={3}
           slidesToScroll={1}
           scrollToSlide={3}
-          className="gradient-outline"
+          className="gradient-outline hide-scrollbar"
           onSlideVisible={(context, event) => {
             //console.log("onSlideVisible", context, event);
           }}
@@ -43,6 +43,7 @@ const ProductosSlider = () => {
         </Glider>
         <h4><Link to="/">Ver mas productos</Link></h4>
       </div>
+      
     </div>
   );
 };

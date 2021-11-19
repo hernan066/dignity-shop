@@ -2,6 +2,7 @@
    width: 100%;
    margin-top: 20px;
    text-align: center;
+   padding: 0px 5%;
     
 }
 .footer__main p{
@@ -49,4 +50,17 @@
 .footer__col br{
     margin-bottom: 5px;
 }
+@media (max-width: 550px){
+    div.footer__col:nth-child(3){
+        display: none;
+        
+    }
+    .footer__main p {
+       font-size: 12px;
+    }
+    .news__main h3{
+        font-size: 20px;
+    }
+}
+    
 

@@ -25,7 +25,7 @@ const GliderCom = () => {
           slidesToShow={3}
           slidesToScroll={1}
           scrollToSlide={3}
-          className="gradient-outline"
+          className="gradient-outline hide-scrollbar"
           onSlideVisible={(context, event) => {
             //console.log("onSlideVisible", context, event);
           }}

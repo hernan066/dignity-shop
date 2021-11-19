@@ -17,7 +17,7 @@ const Footer = () => {
                     <Link to="/register">Registrarse</Link>
                     <Link to="/login">Ingresar</Link>
                 </div>
-                <div className="footer__col">
+                <div className="footer__col institucional">
                         <h3>Institucional</h3>
                         
                         <Link to="/">Términos y condiciones</Link>
