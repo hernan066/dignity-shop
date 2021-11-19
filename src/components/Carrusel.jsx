@@ -20,7 +20,7 @@ const Carrusel = () => {
             <div className="carrusel__info">
                 <div className="carrusel__col">
                 <i className="far fa-comment-alt"></i>
-                <p>Atención al cliente</p>
+                <p>Atencion al cliente</p>
                 </div>
                 <div className="carrusel__col">
                 <i className="fas fa-shopping-cart"></i>

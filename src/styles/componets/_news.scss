@@ -2,9 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 0px 5%;
  
   
 
+}
+.news__main form{
+  padding: 5px;
 }
 
 .news__main h3 {
@@ -22,7 +27,7 @@
 .news__mail {
   position: relative;
   margin: 30 px auto 0.5 em;
- width: 400px;
+ width: 350px;
   margin-top: 30px;
   margin-bottom: 30px;
 }

@@ -1,42 +1,46 @@
 .carrusel__main{
     height: auto;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    
     background-color: $rosa1;
+    padding: 15px 5%;
 }
 .carrusel__main h3{
     font-size: 30px;
     letter-spacing: 5px;
     margin-left: 80px;
     font-weight: 400;
+    padding: 20px;
 }
 .carrusel__main span{
     font-weight: 1000;
 }
 .carrusel__main h3 a{
+   
     letter-spacing: 1px;
     text-decoration: none;
     color: $rosa3;
     font-style: italic;
 }
 
+
 .carrusel__img{
     margin:20px 80px;
 }
 
 .carrusel__info{
-    height: 140px;
-    
+    //height: 140px;
+    padding: 15px 0px;
     margin: 30px 80px 15px 80px;
     background-color: white; 
     display: flex;
     color: $rosa3;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 
 }
 .carrusel__col{
     flex: 1;
+    padding: 5px;
     text-align: center;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -62,7 +66,7 @@
 .carrusel__elemento{
    // width: 300px;
     margin: 10px;
-   height: 430px;
+   //height: 430px;
     overflow: hidden;
 }
 .carrusel__elemento h3{
@@ -81,3 +85,40 @@
         opacity: 0.7;
     }
 }
+
+@media (max-width: 960px) {
+  .carrusel__main h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 790px) {
+   
+    .carrusel__img {
+      margin: 20px 0px;
+    }
+    .carrusel__info {
+      margin: 30px 10px 15px 10px;
+    }
+    .carrusel__main h3 {
+      font-size: 20px;
+    }
+  }
+@media (max-width: 580px) {
+   
+    
+    .carrusel__info {
+      margin: 30px 0px 15px 0px;
+    }
+    .carrusel__col i{
+        
+        font-size: 40px;
+        
+        
+    }
+    .carrusel__col p{
+        
+        font-size: 15px;
+        
+    }
+    
+  }
