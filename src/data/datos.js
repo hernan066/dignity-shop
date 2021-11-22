@@ -1,6 +1,6 @@
 export const datos =[
     {
-        id: 1,
+        id: 101,
         nombre: 'Short modal',
         descripcion: 'Short modal para niños',
         categoria: 'Ropa',
@@ -14,7 +14,7 @@ export const datos =[
 
     },
     {
-        id: 2,
+        id: 102,
         nombre: 'Short modal',
         descripcion: 'Short modal para niños',
         categoria: 'Ropa',
@@ -26,7 +26,7 @@ export const datos =[
 
     },
     {
-        id: 3,
+        id: 103,
         nombre: 'Malla',
         descripcion: 'Malla para niños',
         categoria: 'Ropa',
@@ -39,7 +39,7 @@ export const datos =[
     },
     
     {
-        id: 4,
+        id: 104,
         nombre: 'Malla',
         descripcion: 'Malla para niños',
         categoria: 'Ropa',
@@ -51,7 +51,7 @@ export const datos =[
 
     },
     {
-        id: 5,
+        id: 105,
         nombre: 'Malla',
         descripcion: 'Malla para niños',
         categoria: 'Ropa',
@@ -63,7 +63,7 @@ export const datos =[
 
     },
     {
-        id: 6,
+        id: 106,
         nombre: 'Malla',
         descripcion: 'Malla para niños',
         categoria: 'Ropa',
@@ -75,7 +75,7 @@ export const datos =[
 
     },
     {
-        id: 7,
+        id: 107,
         nombre: 'Bombacha',
         descripcion: 'Bombacha niña',
         categoria: 'Ropa interior',
@@ -87,7 +87,7 @@ export const datos =[
 
     },
     {
-        id: 8,
+        id: 108,
         nombre: 'Medias',
         descripcion: 'Medias para niños',
         categoria: 'Ropa interior',
@@ -99,7 +99,7 @@ export const datos =[
 
     },
     {
-        id: 9,
+        id: 109,
         nombre: 'Collar',
         descripcion: 'Malla para niños',
         categoria: 'Accesorios',

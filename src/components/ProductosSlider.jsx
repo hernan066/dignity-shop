@@ -34,14 +34,14 @@ const ProductosSlider = () => {
           {datos.map((data) => (
             <Contenido key={data.id}>
               <div className="carrusel__elemento">
-                <Link to="/detalle"><img src={data.imagen} alt={data.descripcion} /></Link>
+                <Link to={`/producto/${datos._id}`}><img src={data.imagen} alt={data.descripcion} /></Link>
                 <h3>{data.nombre}</h3>
                 <p>{data.precio}</p>
               </div>
             </Contenido>
           ))}
         </Glider>
-        <h4><Link to="/">Ver mas productos</Link></h4>
+        <h4><Link to="/productos">Ver mas productos</Link></h4>
       </div>
       
     </div>
@@ -49,3 +49,5 @@ const ProductosSlider = () => {
 };
 
 export default ProductosSlider;
+
+
