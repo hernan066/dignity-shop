@@ -7,6 +7,7 @@ import Carrusel from '../components/Carrusel'
 import ProductosSlider from '../components/ProductosSlider'
 import Navbar from '../components/Navbar'
 import Whastapp from '../components/Whastapp'
+//import Productos from '../components/Productos'
 
 
 
@@ -17,7 +18,8 @@ function Home() {
            <Whastapp />
            <Navbar />
            <Slider />
-           
+           {/* <Productos /> */}
+
            <ProductosSlider />
            
            <Carrusel />

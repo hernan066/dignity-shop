@@ -35,13 +35,16 @@ const Navbar = () => {
         <div className="nav__center">
           <ul className="nav__menu">
             <li>
-              <Link to="/" >Ropa Niño</Link>
+              <Link to="/productos/ropa-nino" >Ropa Niño</Link>
             </li>
+           { <li>
+              <Link to="/productos/ropa-interior">Ropa interior</Link>
+            </li>}
+           { <li>
+              <Link to="/productos/mallas">Mallas</Link>
+            </li>}
             <li>
-              <Link to="/">Ropa interior</Link>
-            </li>
-            <li>
-              <Link to="/">Accesorios</Link>
+              <Link to="/productos/accesorios">Accesorios</Link>
             </li>
           </ul>
         </div>

@@ -3,61 +3,109 @@ import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 
 import Producto from "./Producto";
+import ProductosSlider from "./ProductosSlider";
 
-const Productos = () => {
+const Productos = ({cat, filters, sort}) => {
+  //console.log(cat, filters, sort)
+  
   const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/products");
+        const res = await axios.get(
+          cat
+            ? `http://localhost:5000/api/products?category=${cat}`
+            : "http://localhost:5000/api/products"
+        );
         setProducts(res.data);
-        console.log(res.data);
+        console.log(res.data)
       } catch (err) {}
     };
     getProducts();
-  }, []);
+  }, [cat]);
 
+  //filtros productos
+  useEffect(() => {
+    cat &&
+      setFilteredProducts(
+        products.filter((item) =>
+          Object.entries(filters).every(([key, value]) =>
+            item[key].includes(value)
+          )
+        )
+      );
+  }, [products, cat, filters]);
+
+  
+  //Orden productos
+  useEffect(() => {
+    if (sort === "newest") {
+      setFilteredProducts((prev) =>
+        [...prev].sort((a, b) => a.createdAt - b.createdAt)
+      );
+    } else if (sort === "asc") {
+      setFilteredProducts((prev) =>
+        [...prev].sort((a, b) => a.price - b.price)
+      );
+    } else {
+      setFilteredProducts((prev) =>
+        [...prev].sort((a, b) => b.price - a.price)
+      );
+    }
+  }, [sort]);
+
+  
+  
+  ///////paginacion//////
+  
   //const [cantProducts, setcantProducts] = useState(products.slice(0, 50));
-  const [pageNumber, setPageNumber] = useState(0);
+  /* const [pageNumber, setPageNumber] = useState(0);
 
   const userPerPage = 10;
   const pageVisited = pageNumber * userPerPage;
 
-  const displayProducts = products
+  const displayProducts = filteredProducts
     .slice(pageVisited, pageVisited + userPerPage)
     .map((product) => <Producto datos={product} key={product._id} />);
 
-  const pageCount = Math.ceil(products.length / userPerPage);
+  const pageCount = Math.ceil(filteredProducts.length / userPerPage);
 
   const changePage = ({ selected }) => {
     setPageNumber(selected);
-  };
+  }; */
 
   return (
     <div className="prod__container">
-      <h2>Categoria: categoria</h2>
+      
 
       <div className="prod__main">
-        {/* {products.map((datos) => (
-          <Producto datos={datos} key={datos._id} />
-        ))} */}
-        {displayProducts}
+        {
+          cat 
+          ? filteredProducts.map((datos) => (<Producto datos={datos} key={datos._id} />))
+          : products.splice(0, 8).map((datos)=>(<Producto datos={datos} key={datos._id} />))
+        
+        
+        } 
+        
+        
+        
+        {/* {displayProducts} */}
       </div>
-      <div className="prod__paginate">
-        <ReactPaginate
-          previousLabel={"Anterior"}
-          nextLabel={"Siguiente"}
-          pageCount={pageCount}
-          onPageChange={changePage}
-          containerClassName={"paginate__container"}
-          previousClassName={"paginate__btn_prev"}
-          nextLinkClassName={"paginate__btn_next"}
-          disabledClassName={"paginate__disable"}
-          activeClassName={"paginate__active"}
-          pageClassName={"paginate__page"}
-        />
-      </div>
+
+      {/* <ReactPaginate
+        previousLabel={"Anterior"}
+        nextLabel={"Siguiente"}
+        pageCount={pageCount}
+        onPageChange={changePage}
+        containerClassName={"paginate__container"}
+        previousClassName={"paginate__btn_prev"}
+        nextLinkClassName={"paginate__btn_next"}
+        disabledClassName={"paginate__disable"}
+        activeClassName={"paginate__active"}
+        pageClassName={"paginate__page"}
+      /> */}
     </div>
   );
 };
