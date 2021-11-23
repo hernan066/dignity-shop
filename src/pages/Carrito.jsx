@@ -1,10 +1,14 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 
 const Carrito = () => {
-  return (
+  
+    const cart = useSelector(state => state.cart)
+  
+    return (
     <>
       <Navbar />
 
@@ -13,81 +17,46 @@ const Carrito = () => {
         <div className="carrito__container">
           <div className="carrito__productos">
 
-          <div className="carrito__producto">
-            <div className="carrito__img">
-              <img src="https://i.ibb.co/722pd72/1.jpg" alt="img" />
-            </div>
-            <div className="carrito__info">
-              
-              <div className="carrito__col">
-              <h3>Producto</h3>
-              <i>Short modal</i>
-              </div>
-              
-                <div className="carrito__col">
-                    <h3>Precio</h3>
-                    <p>$300</p>
+          {
+              cart.products.map((item)=>(
+
+                <div className="carrito__producto">
+                <div className="carrito__img">
+                  <img src={item.img} alt={item.desc} />
                 </div>
-              <div className="carrito__col">
-                  <h3>Cantidad</h3>
-                  <p>1</p>
-              </div>
-              <div className="carrito__col">
-                  <h3>Borrar</h3>
-                  <i className="far fa-times-circle"></i>
-              </div>
-            </div>
-          </div>
-          <div className="carrito__producto">
-            <div className="carrito__img">
-              <img src="https://i.ibb.co/722pd72/1.jpg" alt="img" />
-            </div>
-            <div className="carrito__info">
-              
-              <div className="carrito__col">
-              <h3>Producto</h3>
-              <i>Short modal</i>
-              </div>
-              
-                <div className="carrito__col">
-                    <h3>Precio</h3>
-                    <p>$300</p>
+                <div className="carrito__info">
+                  
+                  <div className="carrito__col">
+                  <h3>Producto</h3>
+                  <i>{item.title}</i>
+                  </div>
+                  
+                    <div className="carrito__col">
+                        <h3>Precio</h3>
+                        <p>${item.price}</p>
+                    </div>
+                  <div className="carrito__col">
+                      <h3>Cantidad</h3>
+                      <p>1</p>
+                  </div>
+                  <div className="carrito__col">
+                      <h3>Borrar</h3>
+                      <i className="far fa-times-circle"></i>
+                  </div>
                 </div>
-              <div className="carrito__col">
-                  <h3>Cantidad</h3>
-                  <p>1</p>
               </div>
-              <div className="carrito__col">
-                  <h3>Borrar</h3>
-                  <i className="far fa-times-circle"></i>
-              </div>
-            </div>
-          </div>
-          <div className="carrito__producto">
-            <div className="carrito__img">
-              <img src="https://i.ibb.co/722pd72/1.jpg" alt="img" />
-            </div>
-            <div className="carrito__info">
-              
-              <div className="carrito__col">
-              <h3>Producto</h3>
-              <i>Short modal</i>
-              </div>
-              
-                <div className="carrito__col">
-                    <h3>Precio</h3>
-                    <p>$300</p>
-                </div>
-              <div className="carrito__col">
-                  <h3>Cantidad</h3>
-                  <p>1</p>
-              </div>
-              <div className="carrito__col">
-                  <h3>Borrar</h3>
-                  <i className="far fa-times-circle"></i>
-              </div>
-            </div>
-          </div>
+              ))
+          }
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
           </div>
           
           
@@ -99,13 +68,13 @@ const Carrito = () => {
             <h3>Resumen</h3>
             <hr />
             <div className="carrito__totales-sub">
-            <p>Subtotal:</p><p>$100</p>
+            <p>Subtotal:</p><p>${cart.total}</p>
 
             </div>
             <hr />
             <div className="carrito__totales-to">
 
-            <p>Total: </p><p>$100</p>
+            <p>Total: </p><p>${cart.total}</p>
             </div>
             <button className="carrito__btn">Comprar</button>
           </div>
