@@ -59,7 +59,7 @@ const Navbar = () => {
               <i className="far fa-user-circle"></i>
             </span>
           </Link>
-          <Link to="/">
+          <Link to="/carrito">
             <span>
               <Badge badgeContent={cart.quantity} color="secondary">
                 <ShoppingCartOutlined />
