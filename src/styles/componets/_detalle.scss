@@ -45,15 +45,18 @@
 }
 
 .detalle__info button{
+    color: white;
+    letter-spacing: 5px;
+    font-size: 16px;
     margin-top: 15px;
     height: 40px;
-    background-color: $rosa2;
+    background-color: $rosa4;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease-in;
     &:hover{
-        background-color: darken($color: $rosa2, $amount: 10);
+        background-color: darken($color: $rosa4, $amount: 10);
     }
 
 }
@@ -66,6 +69,7 @@
 }
 .detalle__review{
     display: flex;
+    color: $rosa4;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc ;
     padding: 10px 0px;
