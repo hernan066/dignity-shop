@@ -1,9 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import ReactPaginate from "react-paginate";
+//import ReactPaginate from "react-paginate";
 
 import Producto from "./Producto";
-import ProductosSlider from "./ProductosSlider";
+
 
 const Productos = ({cat, filters, sort}) => {
   //console.log(cat, filters, sort)
