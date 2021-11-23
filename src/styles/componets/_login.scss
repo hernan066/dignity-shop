@@ -17,7 +17,7 @@
     align-items: center;
     height: 500px;
     width: 500px;
-    border: 1px solid $rosa3;
+    border: 1px solid $rosa4;
     border-radius: 10px;
     padding: 30px;
    //background-color: $rosa1;
@@ -41,10 +41,10 @@
 .login__form form button{
     width: 100%;
     padding: 15px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-size: 15px;
     text-transform: uppercase;
-    background-color: $rosa3;
+    background-color: $rosa4;
     color: white;
     border: none;
     border-radius: 10px;
@@ -52,7 +52,7 @@
     cursor: pointer;
     
     &:hover{
-        background-color: darken($color: $rosa3, $amount: 10);
+        background-color: darken($color: $rosa4, $amount: 10);
     }
 
 }
@@ -73,11 +73,11 @@
 }
 .login__register a{
     text-decoration: none;
-    color: $rosa3;
+    color: $rosa4;
     //margin-left: 5px;
     flex: 2;
     
     &:hover{
-        color: darken($color: $rosa3, $amount: 10);
+        color: darken($color: $rosa4, $amount: 10);
     }
 }
