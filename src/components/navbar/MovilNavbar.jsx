@@ -1,9 +1,24 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { closeHambugerMenu } from "../../actions/ui";
 
-const MovilNavbar = ({menuOn}) => {
+const MovilNavbar = () => {
   
   
+  const dispatch = useDispatch();
+  
+  
+  
+  const handleClick = () => {
+    window.scrollTo(
+      {
+        top: 0,
+        behavior: "smooth"
+      }
+    );
+    dispatch(closeHambugerMenu());
+  }
    
 
   return (
@@ -15,16 +30,19 @@ const MovilNavbar = ({menuOn}) => {
         
         <ul className="movilNav__menu">
           <li>
-            <Link to="/">Ropa Niño</Link>
+            <Link to="/productos/ropa-nino" onClick={handleClick}>Ropa Niño</Link>
           </li>
           <li>
-            <Link to="/">Ropa interior</Link>
+            <Link to="/productos/ropa-interior" onClick={handleClick}>Ropa interior</Link>
           </li>
           <li>
-            <Link to="/">Accesorios</Link>
+            <Link to="/productos/mallas" onClick={handleClick}>Mallas</Link>
           </li>
           <li>
-          <i className="far fa-user-circle"></i><Link to="/">Mi cuenta</Link>
+            <Link to="/productos/accesorios" onClick={handleClick}>Accesorios</Link>
+          </li>
+          <li>
+          <Link to="/login">Mi cuenta</Link>
           </li>
         </ul>
       </div>

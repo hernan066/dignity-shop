@@ -27,7 +27,7 @@ const Productos = ({cat, filters, sort}) => {
   }, [cat]);
 
   //filtros productos
-  useEffect(() => {
+   useEffect(() => {
     cat &&
       setFilteredProducts(
         products.filter((item) =>
@@ -36,7 +36,7 @@ const Productos = ({cat, filters, sort}) => {
           )
         )
       );
-  }, [products, cat, filters]);
+  }, [products, cat, filters]); 
 
   
   //Orden productos

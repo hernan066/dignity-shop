@@ -18,6 +18,12 @@
     
     
 }
+
+
+.productosLista__filtros_cat p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 .productosLista__filtros_orden{
     display: flex;
     justify-content: flex-end;
