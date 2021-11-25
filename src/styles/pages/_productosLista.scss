@@ -30,6 +30,12 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+.productosLista__select{
+    display:none;
+}
+
+
 @media (max-width: 500px){
     .productosLista__main h2{
         font-size: 23px;

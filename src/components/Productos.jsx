@@ -6,7 +6,7 @@ import Producto from "./Producto";
 
 
 const Productos = ({cat, filters, sort}) => {
-  //console.log(cat, filters, sort)
+  console.log(cat, filters, sort)
   
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -27,7 +27,7 @@ const Productos = ({cat, filters, sort}) => {
   }, [cat]);
 
   //filtros productos
-   useEffect(() => {
+  useEffect(() => {
     cat &&
       setFilteredProducts(
         products.filter((item) =>
@@ -36,7 +36,7 @@ const Productos = ({cat, filters, sort}) => {
           )
         )
       );
-  }, [products, cat, filters]); 
+  }, [products, cat, filters]);
 
   
   //Orden productos
