@@ -1,19 +1,19 @@
 import { types } from "../types/types";
 
 const initialState = {
-    currentUser: null,
+    user: null,
     isFetching: false,
     error: false,
 };
 
-export const cartReducer = (state = initialState, action) =>{
+export const authReducer = (state = initialState, action) =>{
     switch (action.type) {
-            case types.authStartLogin:
-                return{
-                    ...state,
-                   
-                    
-                }
+        case types.authLogin:
+            return{
+                ...state,
+                ...action.payload,
+                isFetching: true,
+            }
     
             default:
                 return state;

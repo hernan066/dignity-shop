@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+   
     width: 500px;
     border: 1px solid $rosa4;
     border-radius: 10px;
@@ -28,11 +28,11 @@
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 5px;
-    margin-bottom: 20px;
+    
 }
 .login__form form input{
     width: 100%;
-    margin-bottom: 30px;
+    margin-top: 30px;
     padding: 15px;
     outline: none;
     border: 1px solid #ccc;
@@ -40,6 +40,7 @@
 }
 .login__form form button{
     width: 100%;
+    margin-top: 30px;
     padding: 15px;
     letter-spacing: 4px;
     font-size: 15px;
@@ -80,4 +81,10 @@
     &:hover{
         color: darken($color: $rosa4, $amount: 10);
     }
+}
+.login__error{
+    position: absolute;
+    color: red;
+    font-size: 12px;
+    
 }
