@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import { starLogin } from "../actions/auth";
 
 const SignupSchema = Yup.object().shape({
@@ -16,6 +16,7 @@ const SignupSchema = Yup.object().shape({
 export const Login = () => {
   
   const dispatch = useDispatch();
+  const {error} = useSelector(state => state.auth);
   
   
   return (
@@ -31,7 +32,7 @@ export const Login = () => {
           <h2>Login</h2>
 
           <Formik
-            initialValues={{ email: "correo_admin@correo.com", password: "1234567" }}
+            initialValues={{ email: "", password: "" }}
             validationSchema={SignupSchema}
             onSubmit={(values, { setSubmitting }) => {
               const { email, password } = values;
@@ -66,6 +67,11 @@ export const Login = () => {
           <div className="login__register">
             <p>No tienes cuenta?</p> <Link to="/register">Registrate</Link>
           </div>
+          { 
+            error ? <p className="login__error-login" >Ha ocurrido un error, vuelve a intentarlo</p> : null
+          }
+          
+          
         </div>
       </div>
     </div>
