@@ -12,6 +12,7 @@ const Navbar = () => {
   
   const {hambugerMenu} = useSelector(state => state.ui)
   const cart = useSelector(state => state.cart)
+  const {uid} = useSelector(state => state.auth)
   
   const dispatch = useDispatch()
   
@@ -59,11 +60,25 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="nav__right">
-          <Link to="/login" className="nav__icon-login">
-            <span>
-              <i className="far fa-user-circle"></i>
-            </span>
-          </Link>
+          {
+            uid 
+            ? (
+              <Link to="/cuenta" className="nav__icon-login">
+              <span>
+                <i className="far fa-user-circle"></i>
+              </span>
+            </Link>
+            )
+            :(
+              <Link to="/login" className="nav__icon-login">
+              <span>
+                <i className="far fa-user-circle"></i>
+              </span>
+            </Link>
+            )
+          }
+          
+          
           <Link to="/carrito">
             <span>
               <Badge badgeContent={cart.quantity} color="secondary">

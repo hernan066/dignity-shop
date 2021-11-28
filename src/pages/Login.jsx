@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect }  from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import {useDispatch, useSelector} from "react-redux";
@@ -15,8 +15,8 @@ const SignupSchema = Yup.object().shape({
 
 export const Login = () => {
   
+  
   const dispatch = useDispatch();
-  const {error} = useSelector(state => state.auth);
   
   
   return (
@@ -34,11 +34,13 @@ export const Login = () => {
           <Formik
             initialValues={{ email: "", password: "" }}
             validationSchema={SignupSchema}
-            onSubmit={(values, { setSubmitting }) => {
-              const { email, password } = values;
+            onSubmit={(values, { resetForm }) => {
               
+              const { email, password } = values;
               dispatch(starLogin(email, password));
-              console.log(email, password);
+
+              resetForm();
+              
             }}
           >
             {({ isSubmitting }) => (
@@ -67,9 +69,7 @@ export const Login = () => {
           <div className="login__register">
             <p>No tienes cuenta?</p> <Link to="/register">Registrate</Link>
           </div>
-          { 
-            error ? <p className="login__error-login" >Ha ocurrido un error, vuelve a intentarlo</p> : null
-          }
+         
           
           
         </div>
